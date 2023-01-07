@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pitshop.Pages.Welcome"
+             Title="Welcome">
+    <StackLayout Orientation="Vertical">
+        <Label Text="Welcome to Pitshop!"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center" />
+        <Button Text="Make an Appointment"
+        Clicked="OnMakeAppointmentButtonClicked" CornerRadius="0"
+        BackgroundColor="Black"/>
+        <Button Text="Previous Appointments"
+        Clicked="OnPreviousAppointmentsButtonClicked" CornerRadius="0"
+        BackgroundColor="Black"/>
+        <Button Text="Notifications"
+        Clicked="OnNotificationsButtonClicked" CornerRadius="0"
+        BackgroundColor="Black"/>
+    </StackLayout>
+</ContentPage>

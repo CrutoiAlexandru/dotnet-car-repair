@@ -1,0 +1,1 @@
+C:\Users\ACrutoi\SCHOOL\dotnet-car-repair\Pitshop\Pitshop.csproj;x64

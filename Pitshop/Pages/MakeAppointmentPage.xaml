@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pitshop.Pages.MakeAppointmentPage"
+             Title="MakeAppointmentPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <StackLayout>
+        <Button Text="Home"
+        Clicked="HomeButtonClicked"
+        CornerRadius="0"
+        BackgroundColor="Black" />
+        <Entry Placeholder="Name"
+           x:Name="NameField" />
+        <Entry Placeholder="Email"
+            x:Name="EmailField">
+            <Entry.Behaviors>
+                <toolkit:EmailValidationBehavior
+                InvalidStyle="{StaticResource InvalidEntryStyle}"
+                ValidStyle="{StaticResource ValidEntryStyle}"
+                Flags="ValidateOnValueChanged" />
+            </Entry.Behaviors>
+        </Entry>
+        <Entry Placeholder="Plate"
+           x:Name="PlateField" MaxLength="7"/>
+        <Entry Placeholder="Car Model"
+           x:Name="CarModelField" />
+        <Entry Placeholder="Issue"
+           x:Name="IssueField" />
+        <DatePicker x:Name="DateField" />
+        <TimePicker x:Name="TimeField" />
+        <Button Text="Make Appointment"
+            Clicked="OnMakeAppointmentButtonClicked" 
+            CornerRadius="0"
+            BackgroundColor="Black"/>
+    </StackLayout>
+</ContentPage>
